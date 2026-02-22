@@ -4,89 +4,272 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Casa do Manto</title>
+<title>Casa do Manto | Camisas Premium</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0d47a1, #1976d2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    text-align: center;
-    max-width: 400px;
-}
-
-h1 {
-    margin-bottom: 10px;
-    color: #0d47a1;
-}
-
-.produto-img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.preco {
-    font-size: 28px;
-    font-weight: bold;
-    color: #00c853;
-    margin: 10px 0;
-}
-
-.botao {
-    background: #25d366;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.botao:hover {
-    background: #1ebe5d;
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
 
-<div class="container">
+<div class="top-bar">
+🔥 Frete grátis em pedidos acima de R$ 299,00
+</div>
 
-<h1>Casa do Manto</h1>
+<header>
 
-<img class="produto-img" src="https://via.placeholder.com/400x400.png?text=Sua+Camisa" alt="Camisa">
+<div class="container header-content">
 
-<div class="preco">R$189,90</div>
+<div class="logo">
+<img src="logo.png" alt="Casa do Manto">
+</div>
 
-<button class="botao" onclick="comprar()">Comprar no WhatsApp</button>
+<div class="search-bar">
+<input type="text" placeholder="Buscar camisas...">
+<button>
+<i class="fas fa-search"></i>
+</button>
+</div>
+
+<div class="user-actions">
+
+<a href="#">
+<i class="far fa-user"></i>
+Minha Conta
+</a>
+
+<div class="cart-icon">
+<i class="fas fa-shopping-bag"></i>
+<span id="cart-count">0</span>
+</div>
 
 </div>
 
-<script>
+</div>
+</header>
 
-function comprar() {
+<nav class="main-nav">
 
-window.open("https://wa.me/5531998409222?text=Quero%20comprar%20essa%20camisa", "_blank");
+<ul class="container">
 
-}
+<li><a href="#">INÍCIO</a></li>
 
-</script>
+<li><a href="#">BRASILEIRÃO</a></li>
+
+<li><a href="#">EUROPEUS</a></li>
+
+<li><a href="#">SELEÇÕES</a></li>
+
+<li><a href="#">RETRO</a></li>
+
+<li><a href="#" class="highlight">OFERTAS</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero-slider">
+
+<div class="slide">
+
+<img src="banner.jpg" alt="Casa do Manto">
+
+</div>
+
+</section>
+
+<section class="benefits container">
+
+<div class="benefit-item">
+
+<i class="fas fa-sync"></i>
+
+<div>
+
+<strong>Troca Grátis</strong>
+
+<p>Até 7 dias após receber</p>
+
+</div>
+
+</div>
+
+<div class="benefit-item">
+
+<i class="fab fa-whatsapp"></i>
+
+<div>
+
+<strong>Suporte no WhatsApp</strong>
+
+<p>Atendimento rápido</p>
+
+</div>
+
+</div>
+
+<div class="benefit-item">
+
+<i class="fas fa-shield-alt"></i>
+
+<div>
+
+<strong>Compra Segura</strong>
+
+<p>Ambiente protegido</p>
+
+</div>
+
+</div>
+
+</section>
+
+<main class="container">
+
+<h2 class="section-title">
+
+DESTAQUES DA SEMANA
+
+</h2>
+
+<div class="product-grid">
+
+<!-- PRODUTO 1 -->
+
+<div class="product-card">
+
+<div class="badge-off">
+
+OFERTA
+
+</div>
+
+<div class="product-image">
+
+<img src="produto1.jpg">
+
+<button class="quick-view">
+
+COMPRAR AGORA
+
+</button>
+
+</div>
+
+<div class="product-info">
+
+<p class="category">
+
+Brasileirão
+
+</p>
+
+<h3 class="product-name">
+
+Camisa Cruzeiro Away 24/25
+
+</h3>
+
+<div class="prices">
+
+<span class="old-price">
+
+R$ 189,90
+
+</span>
+
+<span class="current-price">
+
+R$ 159,90
+
+</span>
+
+</div>
+
+<p class="installments">
+
+3x de R$ 53,30 sem juros
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PRODUTO 2 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img src="produto2.jpg">
+
+<button class="quick-view">
+
+COMPRAR AGORA
+
+</button>
+
+</div>
+
+<div class="product-info">
+
+<p class="category">
+
+Europeu
+
+</p>
+
+<h3 class="product-name">
+
+Camisa Real Madrid Home 24/25
+
+</h3>
+
+<div class="prices">
+
+<span class="current-price">
+
+R$ 169,90
+
+</span>
+
+</div>
+
+<p class="installments">
+
+3x de R$ 56,63 sem juros
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<a href="https://wa.me/5531998409222" class="whatsapp-float" target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<footer>
+
+<p>
+
+© 2024 Casa do Manto - Todos os direitos reservados.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
